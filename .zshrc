@@ -6,3 +6,11 @@ alias ls='pwd; ls -G'
 
 # Color the output of grep, too.
 alias grep='grep --color'
+
+if [ -f ~/.zprofile ]; then
+    source ~/.zprofile
+fi
+
+if [ -f ~/.git-completion.bash ]; then
+    source ~/.git-completion.bash
+fi
