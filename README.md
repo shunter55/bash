@@ -1,12 +1,11 @@
-# bash
+# bash / zsh
 
 Use bash or zsh.
 
-copy
+ZSH - copy to home directory:
+  - .zsh/
+  - .zprofile
   - .zshrc
   - .vimrc
-  - .git-completion.bash
-
-to home directory.
 
 Import iterm color scheme to iterm2.

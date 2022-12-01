@@ -7,10 +7,8 @@ alias ls='pwd; ls -G'
 # Color the output of grep, too.
 alias grep='grep --color'
 
-if [ -f ~/.zprofile ]; then
-    source ~/.zprofile
-fi
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
 
-if [ -f ~/.git-completion.bash ]; then
-    source ~/.git-completion.bash
-fi
+autoload -Uz compinit && compinit
